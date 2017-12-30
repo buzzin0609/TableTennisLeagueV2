@@ -1,0 +1,389 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    size={2}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 1,
+        "flex": 2,
+        "flexDirection": "row",
+        "padding": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontFamily": "roboto-regular",
+          "fontSize": 16,
+        }
+      }
+    >
+      Player
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    />
+  </View>
+  <View
+    size={1}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 1,
+        "flex": 1,
+        "flexDirection": "row",
+        "padding": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontFamily": "roboto-regular",
+          "fontSize": 16,
+        }
+      }
+    >
+      Pld
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    />
+  </View>
+  <View
+    size={1}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 1,
+        "flex": 1,
+        "flexDirection": "row",
+        "padding": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontFamily": "roboto-regular",
+          "fontSize": 16,
+        }
+      }
+    >
+      W
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    />
+  </View>
+  <View
+    size={1}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 1,
+        "flex": 1,
+        "flexDirection": "row",
+        "padding": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontFamily": "roboto-regular",
+          "fontSize": 16,
+        }
+      }
+    >
+      L
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    />
+  </View>
+  <View
+    size={1.5}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 1,
+        "flex": 1.5,
+        "flexDirection": "row",
+        "padding": 10,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontFamily": "roboto-regular",
+          "fontSize": 16,
+        }
+      }
+    >
+      RP
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    />
+  </View>
+</View>
+`;
+
+exports[`should render player cells when players passed to LeagueTable 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LeagueTable />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Array [
+    <LeagueTableHeader
+      headings={
+        Array [
+          HeadingType {
+            "name": "Player",
+            "size": 2,
+            "slug": "name",
+          },
+          HeadingType {
+            "name": "Pld",
+            "size": 1,
+            "slug": "gamesPlayed",
+          },
+          HeadingType {
+            "name": "W",
+            "size": 1,
+            "slug": "wins",
+          },
+          HeadingType {
+            "name": "L",
+            "size": 1,
+            "slug": "losses",
+          },
+          HeadingType {
+            "name": "RP",
+            "size": 1.5,
+            "slug": "rankPoints",
+          },
+        ]
+      }
+    />,
+    <StateWrapper
+      stateProps="players"
+    >
+      <LeagueTableBody
+        players={Array []}
+      />
+    </StateWrapper>,
+  ],
+  Symbol(enzyme.__nodes__): Array [
+    Array [
+      <LeagueTableHeader
+        headings={
+          Array [
+            HeadingType {
+              "name": "Player",
+              "size": 2,
+              "slug": "name",
+            },
+            HeadingType {
+              "name": "Pld",
+              "size": 1,
+              "slug": "gamesPlayed",
+            },
+            HeadingType {
+              "name": "W",
+              "size": 1,
+              "slug": "wins",
+            },
+            HeadingType {
+              "name": "L",
+              "size": 1,
+              "slug": "losses",
+            },
+            HeadingType {
+              "name": "RP",
+              "size": 1.5,
+              "slug": "rankPoints",
+            },
+          ]
+        }
+      />,
+      <StateWrapper
+        stateProps="players"
+      >
+        <LeagueTableBody
+          players={Array []}
+        />
+      </StateWrapper>,
+    ],
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`should render player cells when players passed to LeagueTable 2`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LeagueTable
+    players={
+      Array [
+        Player {
+          "gamesPlayed": 5,
+          "losses": 0,
+          "name": "Foo",
+          "rankPoints": 0,
+          "rankPointsPrevious": 0,
+          "wins": 5,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Array [
+    <LeagueTableHeader
+      headings={
+        Array [
+          HeadingType {
+            "name": "Player",
+            "size": 2,
+            "slug": "name",
+          },
+          HeadingType {
+            "name": "Pld",
+            "size": 1,
+            "slug": "gamesPlayed",
+          },
+          HeadingType {
+            "name": "W",
+            "size": 1,
+            "slug": "wins",
+          },
+          HeadingType {
+            "name": "L",
+            "size": 1,
+            "slug": "losses",
+          },
+          HeadingType {
+            "name": "RP",
+            "size": 1.5,
+            "slug": "rankPoints",
+          },
+        ]
+      }
+    />,
+    <StateWrapper
+      stateProps="players"
+    >
+      <LeagueTableBody
+        players={Array []}
+      />
+    </StateWrapper>,
+  ],
+  Symbol(enzyme.__nodes__): Array [
+    Array [
+      <LeagueTableHeader
+        headings={
+          Array [
+            HeadingType {
+              "name": "Player",
+              "size": 2,
+              "slug": "name",
+            },
+            HeadingType {
+              "name": "Pld",
+              "size": 1,
+              "slug": "gamesPlayed",
+            },
+            HeadingType {
+              "name": "W",
+              "size": 1,
+              "slug": "wins",
+            },
+            HeadingType {
+              "name": "L",
+              "size": 1,
+              "slug": "losses",
+            },
+            HeadingType {
+              "name": "RP",
+              "size": 1.5,
+              "slug": "rankPoints",
+            },
+          ]
+        }
+      />,
+      <StateWrapper
+        stateProps="players"
+      >
+        <LeagueTableBody
+          players={Array []}
+        />
+      </StateWrapper>,
+    ],
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
