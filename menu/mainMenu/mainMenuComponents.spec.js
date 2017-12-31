@@ -6,11 +6,17 @@ import expect from 'expect';
 import mainMenuComponents from './mainMenuComponents';
 import React from "react";
 
+import renderer from 'react-test-renderer';
+import Enzyme, {shallow} from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({adapter: new Adapter()});
+
 describe('mainMenuComponents:', function () {
 
 	class Test extends React.Component {
 		render() {
-			return <p>hey</p>
+			return <p className={'foo'}>hey</p>
 		}
 	}
 
@@ -22,6 +28,6 @@ describe('mainMenuComponents:', function () {
 	it('should return a Component from those provided', function() {
 		const cb = mainMenuComponents({foo: Test});
 
-		expect(cb('foo') instanceof React.Element).toEqual(true);
+		expect(shallow(cb('foo')).find('.foo')).toBeTruthy();
 	})
 });

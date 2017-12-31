@@ -10,7 +10,7 @@ const MAIN_MENU_BUTTONS: Array<MenuButtonType> = [
 		text: 'Add New Player',
 		icon: 'home',
 		iconColor: '#000',
-		viewName: 'AddPlayer'
+		viewName: 'addPlayer'
 	}),
 	new MenuButtonType({
 		text: 'Delete Player',

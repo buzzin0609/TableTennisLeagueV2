@@ -8,6 +8,7 @@ import baseViewLayoutStyles from "../layout/baseViewLayoutStyles";
 import MainMenuButton from "../menu/MainMenuButton";
 import toggleMenu from "../menu/toggleMenu";
 import State from "../state/State";
+import mainMenuComponents, {componentsObject} from "../menu/mainMenu/mainMenuComponents";
 
 let previous = void 0;
 
@@ -24,7 +25,7 @@ export default {
 			headerStyle: baseViewLayoutStyles.header,
 			headerMode: 'float',
 			headerRight: (
-				<MainMenuButton toggleMenu={toggleMenu} navigate={navigation.navigate} />
+				<MainMenuButton toggleMenu={toggleMenu} navigate={viewName => State.update({ modalView: viewName, showModal: true })} />
 			),
 			headerLeft: null,
 			headerTintColor: '#fff',

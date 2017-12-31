@@ -1,8 +1,8 @@
 
 import React, { Component } from 'react';
-import { View } from 'react-native';
-import {Body, Header} from "native-base";
-import Text from "../layout/Text";
+import {Body, Header, Left, Right, Title} from "native-base";
+import CloseModal from "./CloseModal";
+import State from "../state/State";
 
 type Props = {
 	title: string
@@ -13,8 +13,11 @@ class ModalHeader extends Component<Props> {
     return (
 		<Header>
 			<Body>
-				<Text>{this.props.title}</Text>
+				<Title>{this.props.title}</Title>
 			</Body>
+			<Right>
+				<CloseModal globalState={State} />
+			</Right>
 		</Header>
     )
   }
