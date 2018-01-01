@@ -8,6 +8,8 @@ export default function mainMenuCallback(buttons: Array<MenuButtonType>, navigat
 	}
 
 	return function handleOnPress(buttonIndex: number) {
-		buttons[buttonIndex].onPress(navigate);
+		if (buttons[buttonIndex] && buttons[buttonIndex].viewName) {
+			buttons[buttonIndex].onPress(navigate);
+		}
 	}
 }

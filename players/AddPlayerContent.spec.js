@@ -6,6 +6,7 @@ import Enzyme, {shallow} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import Text from "../layout/Text";
 import ModalHeader from "../modal/ModalHeader";
+import ModalContent from "../modal/ModalContent";
 
 Enzyme.configure({adapter: new Adapter()});
 
@@ -20,5 +21,13 @@ describe('AddPlayerContent: ', function () {
 
 		expect(rendered.root.findByType(ModalHeader)).toBeTruthy();
 		expect(JSON.stringify(rendered.toJSON()).indexOf('Add New Player') >= 0).toEqual(true);
+	});
+
+	describe('ModalContent: ', function() {
+		it('renders the ModalContent without crashing', function() {
+			const rendered = renderer.create(<AddPlayerContent/>);
+
+			expect(rendered.root.findByType(ModalContent)).toBeTruthy();
+		});
 	})
 });

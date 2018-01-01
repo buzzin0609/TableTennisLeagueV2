@@ -20,7 +20,7 @@ describe('CloseModal: ', function () {
 		});
 
 		const rendered = shallow(<CloseModal globalState={state} />);
-		rendered.simulate('click');
+		rendered.simulate('press');
 
 		expect(state.getPartialState('showModal')).toEqual({
 			showModal: false
