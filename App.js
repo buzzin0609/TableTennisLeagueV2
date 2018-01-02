@@ -11,6 +11,6 @@ const AppNavigator = StackNavigator(routes, options);
 const App = () =>
     <Root>
         <AppNavigator/>
-    </Root>
+    </Root>;
 
 export default App;

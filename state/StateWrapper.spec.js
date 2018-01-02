@@ -47,4 +47,30 @@ describe('StateWrapper: ', function testStateWrapper() {
 
 		expect(view.toJSON().children).toEqual(['bar']);
 	});
+
+	it('should render with specified props and state props', function () {
+
+		class Test extends React.Component {
+			render() {
+				return (
+					<Text>
+						{this.props.foo + this.props.bar}
+					</Text>
+				)
+			}
+		}
+
+		const rendered = shallow(
+			<StateWrapper stateProps={'foo'} state={state}>
+				<Test bar={'foo'} />
+			</StateWrapper>
+		);
+
+		const test = rendered.find(Test);
+
+		expect(test.props()).toEqual({
+			foo: 'bar',
+			bar: 'foo'
+		});
+	});
 });

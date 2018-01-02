@@ -35,6 +35,7 @@
     "react-dom": "^16.2.0",
     "react-native": "0.50.3",
     "react-native-easy-grid": "^0.1.15",
-    "react-navigation": "^1.0.0-beta.22"
+    "react-navigation": "^1.0.0-beta.22",
+    "sinon": "^4.1.3"
   }
 }

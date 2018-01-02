@@ -33,16 +33,6 @@ class HomeScreen extends Component {
 		</BaseViewLayout>
     )
   }
-
-  onPress() {
-  	const {players} = State.get();
-
-  	players[0].wins++;
-
-  	State.update({
-		players
-	});
-  }
 }
 
 export default HomeScreen;

@@ -3,7 +3,8 @@
  */
 
 const constants = {
-	COLORS: require('./COLORS').default
-}
+	COLORS: require('./COLORS').default,
+	AJAX_ROUTES: require('./AJAX_ROUTES').default
+};
 
 export default constants;

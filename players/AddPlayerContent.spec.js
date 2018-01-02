@@ -7,10 +7,20 @@ import Adapter from 'enzyme-adapter-react-16';
 import Text from "../layout/Text";
 import ModalHeader from "../modal/ModalHeader";
 import ModalContent from "../modal/ModalContent";
+import * as utils from "../shared/utils";
+import sinon from "sinon";
 
 Enzyme.configure({adapter: new Adapter()});
 
 describe('AddPlayerContent: ', function () {
+	let stub;
+	beforeEach(() => {
+		stub = sinon.stub(utils, 'getWidth');
+	});
+	afterEach(() => {
+		stub.restore();
+	});
+
 	it('renders without crashing', () => {
 		const rendered = renderer.create(<AddPlayerContent/>).toJSON();
 		expect(rendered).toBeTruthy();
@@ -29,5 +39,5 @@ describe('AddPlayerContent: ', function () {
 
 			expect(rendered.root.findByType(ModalContent)).toBeTruthy();
 		});
-	})
+	});
 });

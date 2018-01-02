@@ -9,13 +9,13 @@ import MainMenuButton from "../menu/MainMenuButton";
 import toggleMenu from "../menu/toggleMenu";
 import State from "../state/State";
 import mainMenuComponents, {componentsObject} from "../menu/mainMenu/mainMenuComponents";
+import Dimensions from "react-native/Libraries/Utilities/Dimensions";
 
 let previous = void 0;
 
 export default {
 	initialRouteName: 'Home',
 	navigationOptions: ({navigation}) => {
-
 		(!State.has('navigate') && State.add({
 			navigate: navigation.navigate
 		}));

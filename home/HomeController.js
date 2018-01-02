@@ -7,6 +7,7 @@ import type {IAjax} from "../shared/ajax/IAjax";
 import Ajax from '../shared/ajax/ajax';
 import State from "../state/State";
 import PlayerType from "../players/Player";
+import Dimensions from "react-native/Libraries/Utilities/Dimensions";
 
 type ControllerArgs = {
 	ajaxService: IAjax

@@ -2,7 +2,7 @@ import React from 'react';
 import AddPlayerForm from './AddPlayerForm';
 
 import renderer from 'react-test-renderer';
-import Enzyme, {shallow} from 'enzyme';
+import Enzyme, {shallow, render} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import mockPlayers from "../__mocks__/mockPlayers";
 import {Button, Input, Item} from "native-base";
@@ -32,7 +32,11 @@ describe('AddPlayerForm: ', function () {
 			value: name
 		});
 
+		rendered.find(Button).simulate('press');
+
 		expect(cb.mock.calls.length).toEqual(calls);
+
+		return cb;
 	}
 
 	it('renders without crashing', () => {
@@ -72,6 +76,7 @@ describe('AddPlayerForm: ', function () {
 	});
 
 	it('should trigger afterSubmit callback if valid name', function() {
-		afterSubmitAssertion('Foo', 1);
+		const cb = afterSubmitAssertion('Foo', 1);
+		expect(cb.mock.calls[0]).toEqual(['Foo']);
 	});
 });
