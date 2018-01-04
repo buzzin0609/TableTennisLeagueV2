@@ -74,6 +74,6 @@ export class State {
 	}
 }
 
-const singleton: State = new State();
+let singleton: State = new exports.State();
 
 export default singleton;

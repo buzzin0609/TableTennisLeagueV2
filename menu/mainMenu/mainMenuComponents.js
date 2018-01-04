@@ -3,11 +3,13 @@
 import type {Element} from 'react';
 import React from "react";
 import AddPlayerContent from "../../players/AddPlayerContent";
+import DeletePlayerContent from "../../players/DeletePlayerContent";
 
 
 export function componentsObject(): Object {
 	return {
-		addPlayer: AddPlayerContent
+		addPlayer: AddPlayerContent,
+		deletePlayer: DeletePlayerContent
 	};
 }
 

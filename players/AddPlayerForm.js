@@ -5,6 +5,7 @@ import {Button, Form, Input, Item, Label} from "native-base";
 import playerNameValidator from "./playerNameValidator";
 import Dimensions from "react-native/Libraries/Utilities/Dimensions";
 import playerFormStyles from "./playerFormStyles";
+import PlayerActionForm from "./PlayerActionForm";
 
 type Props = {
 	players: Array<Player>,
@@ -14,7 +15,8 @@ type Props = {
 type State = {
 	isClean: boolean,
 	isValid: boolean,
-	value: string
+	value: string,
+	buttonText: string
 };
 
 class AddPlayerForm extends Component<Props, State> {
@@ -22,7 +24,8 @@ class AddPlayerForm extends Component<Props, State> {
 	state = {
 		isClean: true,
 		isValid: false,
-		value: ''
+		value: '',
+		buttonText: 'Submit'
 	};
 
 	render() {
@@ -39,17 +42,12 @@ class AddPlayerForm extends Component<Props, State> {
 		}
 
 		return (
-			<Form>
-				<Item {...inputProps}>
-					<Label>
-						Player Name
-					</Label>
-					<Input onChangeText={value => this.setState({value})} value={this.state.value} />
-				</Item>
-				<Button style={playerFormStyles.button} onPress={this.onSubmit.bind(this)} title={`Submit`} full>
-					<Text style={playerFormStyles.buttonText} >Submit</Text>
-				</Button>
-			</Form>
+			<PlayerActionForm itemProps={inputProps} buttonText={this.state.buttonText} onPress={this.onSubmit.bind(this)}>
+				<Label>
+					Player Name
+				</Label>
+				<Input onChangeText={value => this.setState({value})} value={this.state.value} />
+			</PlayerActionForm>
 		);
 	}
 
@@ -57,9 +55,10 @@ class AddPlayerForm extends Component<Props, State> {
 		let isClean = false;
 		let isValid = this.state.value.length > 0 &&
 			playerNameValidator(this.state.value, this.props.players);
+		let buttonText = isValid && 'Adding' || 'Submit';
 
 		this.setState({
-			isValid, isClean
+			isValid, isClean, buttonText
 		});
 
 		if (isValid && this.props.afterSubmit) {

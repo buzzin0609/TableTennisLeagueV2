@@ -8,19 +8,23 @@ class Ajax implements IAjax {
 
 		return new Promise(function (resolve, reject) {
 			const xhr = new XMLHttpRequest();
+			xhr.open(method, `${dataUrl}/${url}`);
 
 			xhr.addEventListener("readystatechange", function () {
-				if (this.readyState === 4) {
-					resolve(this.responseText);
+				if (this.readyState === this.DONE) {
+					if (xhr.status >= 200 && xhr.status < 400) {
+						resolve(this.responseText);
+					} else {
+						alert('Network Error: ' + this.responseText);
+						reject(this.responseText);
+					}
 				}
 			});
-
-			xhr.open(method, `${dataUrl}/${url}`);
 
 			if (method === 'GET') {
 				xhr.send();
 			} else {
-				xhr.setRequestHeader("content-type", "application/json");
+				xhr.setRequestHeader("Content-Type", 'application/x-www-form-urlencoded');
 				xhr.send(data);
 			}
 
@@ -39,6 +43,7 @@ class Ajax implements IAjax {
 	}
 
 	post(url: string, data: any): Promise<*> {
+		debugger;
 		return this.request(url, 'POST', data);
 	}
 }

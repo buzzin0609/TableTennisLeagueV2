@@ -1,3 +1,4 @@
+// @flow
 /**
  * Description: Menu button for the app header
  */

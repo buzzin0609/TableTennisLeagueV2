@@ -8,18 +8,19 @@ import Ajax from '../shared/ajax/ajax';
 import State from "../state/State";
 import PlayerType from "../players/Player";
 import Dimensions from "react-native/Libraries/Utilities/Dimensions";
+import constants from "../constants/constants";
 
 type ControllerArgs = {
 	ajaxService: IAjax
 }
 
-class HomeController {
+export class HomeController {
 	constructor(args: ControllerArgs) {
 		this.ajaxService = args.ajaxService;
 	}
 
 	getPlayers() {
-		this.ajaxService.getJSON('/rest/league/players')
+		this.ajaxService.getJSON(constants.AJAX_ROUTES.GET_PLAYERS)
 			.then(this.addPlayers);
 	}
 
@@ -30,6 +31,6 @@ class HomeController {
 	}
 }
 
-export default new HomeController({
+export default new exports.HomeController({
 	ajaxService: Ajax
 });

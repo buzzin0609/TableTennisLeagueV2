@@ -12,17 +12,15 @@ Enzyme.configure({adapter: new Adapter()});
 describe('AddPlayerForm: ', function () {
 
 	function invalidateAssertion(rendered) {
-		rendered.find(Button).simulate('press');
+		rendered.instance().onSubmit();
 		expect(rendered.state().isValid).toEqual(false);
 		expect(rendered.state().isClean).toEqual(false);
-		expect(rendered.find(Item).props().error).toBeTruthy();
 	}
 
 	function validatedAssertion(rendered) {
-		rendered.find(Button).simulate('press');
+		rendered.instance().onSubmit();
 		expect(rendered.state().isValid).toEqual(true);
 		expect(rendered.state().isClean).toEqual(false);
-		expect(rendered.find(Item).props().error).toBeFalsy();
 	}
 
 	function afterSubmitAssertion(name, calls) {
@@ -32,7 +30,7 @@ describe('AddPlayerForm: ', function () {
 			value: name
 		});
 
-		rendered.find(Button).simulate('press');
+		rendered.instance().onSubmit();
 
 		expect(cb.mock.calls.length).toEqual(calls);
 
@@ -79,4 +77,26 @@ describe('AddPlayerForm: ', function () {
 		const cb = afterSubmitAssertion('Foo', 1);
 		expect(cb.mock.calls[0]).toEqual(['Foo']);
 	});
+
+	describe('buttonText: ', function() {
+		function buttonTextTest(value, expected) {
+			const rendered = shallow(<AddPlayerForm players={mockPlayers}/>);
+			rendered.setState({
+				value
+			});
+			rendered.instance().onSubmit();
+
+			expect(rendered.state().buttonText).toEqual(expected);
+		}
+
+		it('should change button text when button clicked and name is valid', function() {
+			buttonTextTest('Foo', 'Adding');
+		});
+
+		it('should keep submit text if name not valid', function() {
+			buttonTextTest('Will', 'Submit');
+		});
+	});
+
+
 });

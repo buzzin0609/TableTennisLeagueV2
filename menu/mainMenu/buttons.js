@@ -16,7 +16,7 @@ const MAIN_MENU_BUTTONS: Array<MenuButtonType> = [
 		text: 'Delete Player',
 		icon: 'analytics',
 		iconColor: '#000',
-		viewName: 'DeletePlayer'
+		viewName: 'deletePlayer'
 	}),
 	new MenuButtonType({
 		text: 'Add New Game',
