@@ -18,10 +18,10 @@ class PlayersModalContent extends Component<Props> {
 	render() {
 		return [
 			<ModalHeader title={this.props.title} key={`players-header`}/>,
-			<ModalContent key={'players'}>
+			<ModalContent key={'players'} style={this.props.style || {}}>
 				{
 					this.props.children && (
-						<StateWrapper stateProps={'players, width'}>
+						<StateWrapper stateProps={'players, width'} >
 							{this.props.children}
 						</StateWrapper>
 					)
