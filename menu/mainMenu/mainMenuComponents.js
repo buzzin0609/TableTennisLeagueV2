@@ -4,12 +4,14 @@ import type {Element} from 'react';
 import React from "react";
 import AddPlayerContent from "../../players/AddPlayerContent";
 import DeletePlayerContent from "../../players/DeletePlayerContent";
+import AddNewGameContent from "../../games/AddNewGameContent";
 
 
 export function componentsObject(): Object {
 	return {
 		addPlayer: AddPlayerContent,
-		deletePlayer: DeletePlayerContent
+		deletePlayer: DeletePlayerContent,
+		addGame: AddNewGameContent
 	};
 }
 

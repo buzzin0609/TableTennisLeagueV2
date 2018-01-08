@@ -22,7 +22,7 @@ const MAIN_MENU_BUTTONS: Array<MenuButtonType> = [
 		text: 'Add New Game',
 		icon: 'user',
 		iconColor: '#000',
-		viewName: 'AddGame'
+		viewName: 'addGame'
 	}),
 	new MenuButtonType({
 		text: 'Cancel',

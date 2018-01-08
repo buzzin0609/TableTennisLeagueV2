@@ -1,8 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import { View } from 'react-native';
 import PlayersModalContent from "./PlayersModalContent";
-import Text from "../layout/Text";
 import PlayerSelect from "./PlayerSelect";
 import Player from "./Player";
 import deletePlayer from "./deletePlayer";
@@ -20,7 +18,12 @@ class DeletePlayerContent extends Component<Props> {
   render() {
     return (
 		<PlayersModalContent title={'Delete Player'} style={playerFormStyles.deleteModal}>
-			<PlayerSelect players={this.props.players}  onValueChange={deletePlayer(ajax, HomeController, State)}/>
+			<PlayerSelect
+				players={this.props.players}
+				placeholder={'Choose Player to Delete'}
+				onValueChange={deletePlayer(ajax, HomeController, State)}
+				style={playerFormStyles.deleteButton}
+			/>
 		</PlayersModalContent>
     );
   }

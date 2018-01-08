@@ -25,6 +25,7 @@ class PlayersModalContent extends Component<Props> {
 							{this.props.children}
 						</StateWrapper>
 					)
+
 				}
 			</ModalContent>
 		];

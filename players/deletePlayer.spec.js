@@ -12,7 +12,7 @@ import constants from "../constants/constants";
 
 describe('deletePlayer:', function () {
 
-	let stubAjax, stubGetPlayers, updateStub;
+	let stubAjax, stubGetPlayers, stubUpdate;
 
 	beforeEach(() => {
 		stubAjax = sinon.stub(ajax.default, 'post');

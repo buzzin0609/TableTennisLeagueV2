@@ -17,5 +17,15 @@ export default {
 	deleteModal: {
 		flex: 1,
 		justifyContent: 'center'
+	},
+	addGameSelect: {
+		paddingTop: 10,
+		paddingBottom: 10,
+	},
+	addGameScore: {
+		padding: 5
+	},
+	addGameScoreLabel: {
+		paddingLeft: 20
 	}
 };

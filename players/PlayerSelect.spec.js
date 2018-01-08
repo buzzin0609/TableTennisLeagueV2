@@ -15,4 +15,9 @@ describe('PlayerSelect: ', function () {
 		const rendered = renderer.create(<PlayerSelect/>).toJSON();
 		expect(rendered).toBeTruthy();
 	});
+
+	it('should render with the correct placeholder prop', function() {
+		const rendered = renderer.create(<PlayerSelect placeholder={`Foo placeholder`}/>).toJSON();
+		expect(JSON.stringify(rendered)).toEqual(expect.stringContaining('Foo placeholder'));
+	});
 });

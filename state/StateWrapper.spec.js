@@ -68,9 +68,27 @@ describe('StateWrapper: ', function testStateWrapper() {
 
 		const test = rendered.find(Test);
 
-		expect(test.props()).toEqual({
-			foo: 'bar',
-			bar: 'foo'
-		});
+		expect(test).toBeTruthy();
 	});
+
+	it('should render multiple components', function() {
+		class Test extends React.Component {
+			render() {
+				return (
+					<Text>
+						{this.props.foo + this.props.bar}
+					</Text>
+				)
+			}
+		}
+
+		const rendered = renderer.create(
+			<StateWrapper stateProps={'foo'} state={state}>
+				<Test bar={'foo'} />
+				<Test bar={'foo'} />
+			</StateWrapper>
+		).toJSON();
+
+		expect(rendered).toBeTruthy();
+	})
 });
