@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37ba16a9-562b-4c7b-906c-3dee764a5508" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/games/AddNewGameContent.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/games/AddNewGameContent.spec.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shared/ensureArray.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shared/ensureArray.spec.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/menu/mainMenu/buttons.js" afterPath="$PROJECT_DIR$/menu/mainMenu/buttons.js" />
-      <change beforePath="$PROJECT_DIR$/menu/mainMenu/mainMenuComponents.js" afterPath="$PROJECT_DIR$/menu/mainMenu/mainMenuComponents.js" />
-      <change beforePath="$PROJECT_DIR$/players/DeletePlayerContent.js" afterPath="$PROJECT_DIR$/players/DeletePlayerContent.js" />
-      <change beforePath="$PROJECT_DIR$/players/PlayerSelect.js" afterPath="$PROJECT_DIR$/players/PlayerSelect.js" />
-      <change beforePath="$PROJECT_DIR$/players/PlayerSelect.spec.js" afterPath="$PROJECT_DIR$/players/PlayerSelect.spec.js" />
-      <change beforePath="$PROJECT_DIR$/players/PlayersModalContent.js" afterPath="$PROJECT_DIR$/players/PlayersModalContent.js" />
-      <change beforePath="$PROJECT_DIR$/players/deletePlayer.spec.js" afterPath="$PROJECT_DIR$/players/deletePlayer.spec.js" />
+      <change beforePath="$PROJECT_DIR$/games/AddNewGameContent.js" afterPath="$PROJECT_DIR$/games/AddNewGameContent.js" />
+      <change beforePath="$PROJECT_DIR$/games/AddNewGameContent.spec.js" afterPath="$PROJECT_DIR$/games/AddNewGameContent.spec.js" />
       <change beforePath="$PROJECT_DIR$/players/playerFormStyles.js" afterPath="$PROJECT_DIR$/players/playerFormStyles.js" />
-      <change beforePath="$PROJECT_DIR$/state/StateWrapper.js" afterPath="$PROJECT_DIR$/state/StateWrapper.js" />
-      <change beforePath="$PROJECT_DIR$/state/StateWrapper.spec.js" afterPath="$PROJECT_DIR$/state/StateWrapper.spec.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,14 +29,12 @@
     <splitter split-orientation="horizontal" split-proportion="0.443577">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="PlayersModalContent.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="PlayersModalContent.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/players/PlayersModalContent.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="288">
+                  <caret line="23" column="67" lean-forward="true" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -55,8 +42,8 @@
           <file leaf-file-name="StateWrapper.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/state/StateWrapper.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="199">
-                  <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+                <state relative-caret-position="504">
+                  <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -68,18 +55,6 @@
                 <state relative-caret-position="216">
                   <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="deletePlayer.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/players/deletePlayer.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#10#58#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -97,8 +72,18 @@
           <file leaf-file-name="AddPlayerForm.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/players/AddPlayerForm.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="463">
-                  <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+                <state relative-caret-position="151">
+                  <caret line="44" column="24" lean-forward="false" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PlayerActionForm.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/players/PlayerActionForm.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -119,21 +104,21 @@
           <file leaf-file-name="AddNewGameContent.spec.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/games/AddNewGameContent.spec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="24">
-                  <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-                  <folding />
+                <state relative-caret-position="319">
+                  <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AddNewGameContent.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/games/AddNewGameContent.js">
+          <file leaf-file-name="AddPlayerContent.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/players/AddPlayerContent.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="96">
+                  <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -141,7 +126,7 @@
           <file leaf-file-name="PlayerSelect.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/players/PlayerSelect.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
+                <state relative-caret-position="-143">
                   <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
@@ -157,7 +142,7 @@
           <file leaf-file-name="ensureArray.spec.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/shared/ensureArray.spec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
+                <state relative-caret-position="0">
                   <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
@@ -180,7 +165,7 @@
           <file leaf-file-name="StateWrapper.spec.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/state/StateWrapper.spec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="247">
+                <state relative-caret-position="1512">
                   <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
@@ -189,20 +174,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="buttons.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/menu/mainMenu/buttons.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="576">
-                  <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="DeletePlayerContent.spec.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/players/DeletePlayerContent.spec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-192">
+                <state relative-caret-position="96">
                   <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
                   <folding />
                 </state>
@@ -212,7 +187,7 @@
           <file leaf-file-name="PlayerSelect.spec.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/players/PlayerSelect.spec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-17">
+                <state relative-caret-position="144">
                   <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
                   <folding />
                 </state>
@@ -232,12 +207,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="playerFormStyles.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="playerFormStyles.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/players/playerFormStyles.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="271">
-                  <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+                <state relative-caret-position="96">
+                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AddNewGameContent.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/games/AddNewGameContent.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="199">
+                  <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+                  <folding>
+                    <element signature="e#10#49#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -323,7 +310,6 @@
         <option value="$PROJECT_DIR$/players/DeletePlayerContent.js" />
         <option value="$PROJECT_DIR$/menu/mainMenu/buttons.js" />
         <option value="$PROJECT_DIR$/menu/mainMenu/mainMenuComponents.js" />
-        <option value="$PROJECT_DIR$/games/AddNewGameContent.spec.js" />
         <option value="$PROJECT_DIR$/players/deletePlayer.spec.js" />
         <option value="$PROJECT_DIR$/players/PlayerSelect.js" />
         <option value="$PROJECT_DIR$/players/PlayersModalContent.js" />
@@ -331,6 +317,7 @@
         <option value="$PROJECT_DIR$/shared/ensureArray.spec.js" />
         <option value="$PROJECT_DIR$/state/StateWrapper.js" />
         <option value="$PROJECT_DIR$/state/StateWrapper.spec.js" />
+        <option value="$PROJECT_DIR$/games/AddNewGameContent.spec.js" />
         <option value="$PROJECT_DIR$/players/playerFormStyles.js" />
         <option value="$PROJECT_DIR$/games/AddNewGameContent.js" />
       </list>
@@ -597,7 +584,8 @@
       <workItem from="1515243437816" duration="4680000" />
       <workItem from="1515353730598" duration="7925000" />
       <workItem from="1515444430206" duration="178000" />
-      <workItem from="1515444622381" duration="6566000" />
+      <workItem from="1515444622381" duration="7279000" />
+      <workItem from="1515527410934" duration="9347000" />
     </task>
     <task id="LOCAL-00001" summary="Added add player modal content">
       <created>1514679522593</created>
@@ -634,43 +622,50 @@
       <option name="project" value="LOCAL" />
       <updated>1515200410443</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Improved state wrapper to render multiple children. Fixed addGame modal">
+      <created>1515452417288</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1515452417288</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Jest_React_Native_Tests - 2018.01.08 at 22h 25m 39s.xml">
+    <history-entry file="Jest_React_Native_Tests - 2018.01.09 at 22h 12m 41s.xml">
       <configuration name="Jest React Native Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Jest_React_Native_Tests - 2018.01.08 at 22h 26m 33s.xml">
+    <history-entry file="Jest_React_Native_Tests - 2018.01.09 at 22h 22m 56s.xml">
       <configuration name="Jest React Native Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Jest_React_Native_Tests - 2018.01.08 at 22h 39m 21s.xml">
+    <history-entry file="Jest_React_Native_Tests - 2018.01.09 at 22h 44m 36s.xml">
       <configuration name="Jest React Native Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Jest_React_Native_Tests - 2018.01.08 at 22h 39m 53s.xml">
+    <history-entry file="Jest_React_Native_Tests - 2018.01.09 at 22h 51m 36s.xml">
       <configuration name="Jest React Native Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Jest_React_Native_Tests - 2018.01.08 at 22h 41m 55s.xml">
+    <history-entry file="Jest_React_Native_Tests - 2018.01.09 at 22h 56m 26s.xml">
       <configuration name="Jest React Native Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Jest_React_Native_Tests - 2018.01.08 at 22h 42m 11s.xml">
+    <history-entry file="Jest_React_Native_Tests - 2018.01.09 at 22h 56m 48s.xml">
       <configuration name="Jest React Native Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Jest_React_Native_Tests - 2018.01.08 at 22h 43m 52s.xml">
+    <history-entry file="Jest_React_Native_Tests - 2018.01.09 at 22h 58m 14s.xml">
       <configuration name="Jest React Native Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Jest_React_Native_Tests - 2018.01.08 at 22h 44m 37s.xml">
+    <history-entry file="Jest_React_Native_Tests - 2018.01.09 at 23h 00m 53s.xml">
       <configuration name="Jest React Native Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Jest_React_Native_Tests - 2018.01.08 at 22h 44m 56s.xml">
+    <history-entry file="Jest_React_Native_Tests - 2018.01.09 at 23h 02m 08s.xml">
       <configuration name="Jest React Native Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Jest_React_Native_Tests - 2018.01.08 at 22h 56m 24s.xml">
+    <history-entry file="Jest_React_Native_Tests - 2018.01.09 at 23h 03m 50s.xml">
       <configuration name="Jest React Native Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188561000" />
+    <option name="totallyTimeSpent" value="198621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,10 +684,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27012128" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36493936" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.6128472" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.6180556" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Flow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.3871528" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.38194445" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -703,7 +699,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -721,11 +716,20 @@
     <MESSAGE value="Added after submit ajax function to add new player to league" />
     <MESSAGE value="Finished add player. Started delete player modal" />
     <MESSAGE value="Finished delete player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished delete player" />
+    <MESSAGE value="Improved state wrapper to render multiple children. Fixed addGame modal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved state wrapper to render multiple children. Fixed addGame modal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/games/AddNewGameContent.spec.js</url>
+          <line>44</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavaScriptTestRunnerJest">
@@ -735,6 +739,16 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>rendered.root.instance</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>rendered.root</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>_HomeController.getPlayers</expression-string>
         <language-id>JavaScript</language-id>
@@ -772,11 +786,6 @@
       </expression>
       <expression>
         <expression-string>rendered.props().afterSubmit</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>rendered.props()</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -934,7 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="30" column="70" lean-forward="false" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -942,7 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="30" column="61" lean-forward="false" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,16 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="744">
           <caret line="41" column="7" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="41" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/players/AddPlayerContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -991,20 +988,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/players/PlayerActionForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/players/deletePlayer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
-            <element signature="e#10#58#0" expanded="true" />
+            <element signature="e#10#58#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1027,37 +1016,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/native-base/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="833" column="78" lean-forward="false" selection-start-line="833" selection-start-column="70" selection-end-line="833" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shared/utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/players/DeletePlayerContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding>
-            <element signature="e#9#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/players/PlayerSelect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1088,14 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/players/AddPlayerForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shared/ensureArray.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -1106,7 +1060,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shared/ensureArray.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="0">
           <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1117,7 +1071,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/players/PlayerSelect.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
+        <state relative-caret-position="144">
           <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
           <folding />
         </state>
@@ -1125,41 +1079,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/players/DeletePlayerContent.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192">
+        <state relative-caret-position="96">
           <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/games/AddNewGameContent.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/players/PlayersModalContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/state/StateWrapper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        <state relative-caret-position="504">
+          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/state/StateWrapper.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="1512">
           <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -1167,20 +1103,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/native-base/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="501" column="18" lean-forward="false" selection-start-line="501" selection-start-column="18" selection-end-line="501" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/players/PlayerSelect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-143">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/players/AddPlayerContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/games/AddNewGameContent.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/players/DeletePlayerContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding>
+            <element signature="e#9#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/players/AddPlayerForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="44" column="24" lean-forward="false" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/players/PlayerActionForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/players/PlayersModalContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="23" column="67" lean-forward="true" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/players/playerFormStyles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="96">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/games/AddNewGameContent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        <state relative-caret-position="199">
+          <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#10#49#0" expanded="true" />
           </folding>
         </state>
       </provider>

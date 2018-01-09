@@ -19,8 +19,8 @@ export default {
 		justifyContent: 'center'
 	},
 	addGameSelect: {
-		paddingTop: 10,
-		paddingBottom: 10,
+		paddingTop: 30,
+		paddingBottom: 30,
 	},
 	addGameScore: {
 		padding: 5
