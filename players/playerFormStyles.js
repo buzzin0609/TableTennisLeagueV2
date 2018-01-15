@@ -27,5 +27,9 @@ export default {
 	},
 	addGameScoreLabel: {
 		paddingLeft: 20
+	},
+	error: {
+		color: 'red',
+		padding: 10
 	}
 };

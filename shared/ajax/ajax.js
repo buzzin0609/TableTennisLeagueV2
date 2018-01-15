@@ -43,7 +43,6 @@ class Ajax implements IAjax {
 	}
 
 	post(url: string, data: any): Promise<*> {
-		debugger;
 		return this.request(url, 'POST', data);
 	}
 }

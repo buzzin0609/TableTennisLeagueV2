@@ -14,12 +14,6 @@ describe('StateWrapper: ', function testStateWrapper() {
 		foo: 'bar'
 	});
 
-	it('throws an error when no child components present', function () {
-		expect(() => {
-			renderer.create(<StateWrapper/>);
-		}).toThrow();
-	});
-
 	it('renders without crashing', () => {
 		const rendered = renderer.create(
 			<StateWrapper>

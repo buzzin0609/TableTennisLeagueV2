@@ -1,3 +1,4 @@
+// @flow
 /**
  * Description: model for a player
  */
@@ -12,6 +13,13 @@ export type PlayerModel = {
 };
 
 class Player {
+	name: string;
+	gamesPlayed: number;
+	wins: number;
+	losses: number;
+	rankPoints: number;
+	rankPointsPrevious: number;
+
 	constructor(args: PlayerModel) {
 		this.name = args.name;
 		this.gamesPlayed = args.gamesPlayed || 0;

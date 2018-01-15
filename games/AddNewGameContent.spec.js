@@ -12,6 +12,7 @@ import * as State from "../state/State";
 import * as ajax from "../shared/ajax/ajax";
 import PlayerSelect from "../players/PlayerSelect";
 import {Input} from "native-base";
+import Text from "../layout/Text";
 
 Enzyme.configure({adapter: new Adapter()});
 
@@ -35,6 +36,14 @@ describe('AddNewGameContent: ', function () {
 	it('renders without crashing', () => {
 		const rendered = renderer.create(<AddNewGameContent players={mockPlayers} />).toJSON();
 		expect(rendered).toBeTruthy();
+	});
+
+	it('should render an error message when isError is true', function() {
+		const rendered = shallow(<AddNewGameContent />);
+		rendered.setState({isError: true});
+
+		expect(JSON.stringify(rendered.find(Text))).toBeTruthy();
+		expect(JSON.stringify(renderer.create(rendered.find(Text)))).toEqual(expect.stringContaining('Invalid game'));
 	});
 
 	describe('.renderPlayerSelect: ', function() {

@@ -1,5 +1,4 @@
 // @flow
-
 import React, {Component} from 'react';
 import {View} from 'react-native';
 import playerFormStyles from "../players/playerFormStyles";
@@ -8,54 +7,70 @@ import PlayerSelect from "../players/PlayerSelect";
 import {Button, Input, Item, Label} from "native-base";
 import Player from "../players/Player";
 import Text from "../layout/Text";
-
-type Props = {
-	players: Array<Player>
-};
+import prepareNewGameArgs from "./prepareNewGameArgs";
+import NewGameSubmitButton from "./NewGameSubmitButton";
+import AddNewGameController from "./AddNewGameController";
+import type {GameArgs} from "./AddNewGameController";
 
 type State = {
 	score1: number,
-	score2: number
+	score2: number,
+	isError: boolean
 }
 
-class AddNewGameContent extends Component<Props, State> {
+class AddNewGameContent extends Component<null, State> {
+	player1: PlayerSelect;
+	player2: PlayerSelect;
+	state: Object;
+
+
 	static defaultProps = {
 		players: []
 	};
 
 	state = {
 		score1: 0,
-		score2: 0
+		score2: 0,
+		isError: false
 	};
 
 	render() {
+
 		return (
-			<PlayersModalContent title={'Add New Game'} style={playerFormStyles.deleteModal}>
-				{ this.renderPlayerSelect('Choose First Player') }
+			<PlayersModalContent
+				title={'Add New Game'}
+				style={playerFormStyles.deleteModal}
+			>
+				{
+					this.state.isError && (
+						<Text style={playerFormStyles.error}>
+							Invalid game. Make sure both names and points are correct
+						</Text>
+					)
+				}
+
+				{ this.renderPlayerSelect('Choose First Player', 'player1') }
 				{ this.renderPlayerScoreInput(
 					(value => this.setState({score1: value})),
 					this.state.score1.toString()
 				)}
-				{ this.renderPlayerSelect('Choose Second Player') }
+				{ this.renderPlayerSelect('Choose Second Player', 'player2') }
 				{ this.renderPlayerScoreInput(
 					(value => this.setState({score2: value})),
 					this.state.score2.toString()
 				)}
+				{ this.renderButton() }
 
-				<Button onPress={() => {}} title={'submit new game'} full style={playerFormStyles.button}>
-					<Text style={playerFormStyles.buttonText}>Submit</Text>
-				</Button>
 			</PlayersModalContent>
 		)
 	}
 
-	renderPlayerSelect(placeholder: string): PlayerSelect {
+	renderPlayerSelect(placeholder: string, stateProp: string): PlayerSelect {
 		return (
 			<PlayerSelect
-				players={this.props.players}
+				ref={playerSelect => this[stateProp] = playerSelect}
 				placeholder={placeholder}
-				onValueChange={() => {
-				}}
+				onValueChange={() => {}}
 				useSelectedValue={true}
 				style={playerFormStyles.addGameSelect}/>
 		);
@@ -67,6 +82,35 @@ class AddNewGameContent extends Component<Props, State> {
 				<Input keyboardType={'numeric'} onChangeText={onChange} value={value}/>
 			</Item>
 		)
+	}
+
+	renderButton() {
+		return (
+			<NewGameSubmitButton onPress={this.onSubmit.bind(this)} />
+		)
+	}
+
+	async onSubmit(players: Array<Player>) {
+
+		this.setState({
+			isError: false
+		});
+
+		const args: GameArgs = prepareNewGameArgs({
+			player1Name: this.player1.state.selected,
+			player2Name: this.player2.state.selected,
+			players: players,
+			points1: this.state.score1,
+			points2: this.state.score2
+		});
+
+		const result = await AddNewGameController.addNewGame(args);
+
+		if (!result) {
+			this.setState({
+				isError: true
+			});
+		}
 	}
 }
 
